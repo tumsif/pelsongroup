@@ -23,7 +23,6 @@ h3,
 h4 {
   font-family: "Roboto", sans-serif !important;
   letter-spacing: 0.5px;
-  text-align: center;
 }
 
 /*banner*/
@@ -85,7 +84,7 @@ h4 {
 
 .nav__link {
   color: #b4d5ff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .nav__link:hover,
 .nav__link:active {
@@ -143,9 +142,15 @@ h4 {
 /*hero section*/
 .hero__header {
   font-size: 2.5rem;
+  font-weight: 700;
 }
-.hero__description {
+.hero-description {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.hero__description__content {
+  font-style: italic;
 }
 .slideshow {
   object-fit: cover;
@@ -160,3 +165,5 @@ h4 {
     height: 500px;
   }
 }
+
+/*about us article section*/
