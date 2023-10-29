@@ -220,6 +220,25 @@ h4 {
     text-align: start;
   }
   .content--heading {
-    max-height: 50px;
+    max-height: 80px;
+  }
+}
+
+/*icon lists*/
+.icon-list-item {
+  color: #005e94;
+  font-size: 2rem;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 520px) {
+  .icon-list-item {
+    flex-direction: column;
+  }
+  .icon-list-item .material-symbols-outlined {
+    font-size: 4rem;
+    margin: 10px 0;
   }
 }
