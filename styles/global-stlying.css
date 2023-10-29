@@ -228,17 +228,22 @@ h4 {
 .icon-list-item {
   color: #005e94;
   font-size: 2rem;
-  padding: 20px 50px;
+  padding: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-@media screen and (max-width: 520px) {
+.icon-list-item .material-symbols-outlined {
+  font-size: 3rem;
+}
+@media screen and (max-width: 600px) {
   .icon-list-item {
+    padding: 20px 50px;
     flex-direction: column;
+    justify-content: center;
   }
   .icon-list-item .material-symbols-outlined {
     font-size: 4rem;
-    margin: 10px 0;
+    margin: 15px 0;
   }
 }
