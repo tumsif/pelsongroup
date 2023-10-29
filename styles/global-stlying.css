@@ -165,5 +165,11 @@ h4 {
     height: 500px;
   }
 }
-
-/*about us article section*/
+/*coursel section*/
+.carousel-indicators button{
+  border: none;
+  background-color: #a3a3a3;
+  margin: 10px;
+  padding: 2px 15px;
+  border-radius: 5px;
+}
