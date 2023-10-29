@@ -14,7 +14,16 @@ body {
     sans-serif !important;
   font-size: 1.6rem !important;
 }
+/*logo*/
+.logo-image img {
+  width: 100px;
+}
 
+@media screen and (max-width: 670px) {
+  .logo-image {
+    display: none;
+  }
+}
 /*typography*/
 
 h1,
@@ -196,10 +205,11 @@ h4 {
   font-size: 3.2rem;
   font-weight: 400;
   display: inline-block;
+  margin-top: 3rem;
 }
 
 .content--description {
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   padding-top: 20px;
 }
@@ -214,6 +224,7 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 50px;
+    row-gap: 50px;
   }
   .content--description {
     padding-top: 0;
@@ -221,6 +232,7 @@ h4 {
   }
   .content--heading {
     max-height: 80px;
+    margin-top: 3rem;
   }
 }
 
@@ -246,4 +258,16 @@ h4 {
     font-size: 4rem;
     margin: 15px 0;
   }
+}
+
+footer {
+  background: #356ccd;
+  color: #fff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+footer p {
+  margin: 0;
 }
