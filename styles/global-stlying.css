@@ -41,8 +41,8 @@ h4 {
 .header {
   background: #067bc2;
   box-shadow: 0 0 15px 2px #888;
-  position: sticky;
-  position: -webkit-sticky; /*safari*/
+  /* position: sticky; */
+  /* position: -webkit-sticky; safari */
 }
 
 .logo--container {
@@ -68,7 +68,7 @@ h4 {
   vertical-align: super;
 }
 
-.nav {
+.header--nav {
   /*this removes the gap left*/
   margin: 0;
   padding: 0;
@@ -78,8 +78,8 @@ h4 {
   align-items: center;
   /*this hides the menu*/
   opacity: 0;
-  height: 0;
-  transition: opacity 0.5s, height 0.2s;
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
 }
 
 .nav__item {
@@ -108,7 +108,7 @@ h4 {
 /*menu toggle*/
 .contents--expanded {
   opacity: 1;
-  height: 100%;
+  max-height: 100%;
 }
 
 /*styling for wider screens*/
@@ -126,7 +126,7 @@ h4 {
     align-items: center;
     height: 9rem;
   }
-  .nav {
+  .header--nav {
     flex-direction: row;
     padding-right: 3rem;
     opacity: 1;
@@ -156,6 +156,7 @@ h4 {
 }
 
 /*hero section*/
+
 .hero__header {
   font-size: 4rem;
   font-weight: 700;
@@ -175,26 +176,18 @@ h4 {
   width: 90vw;
   height: 400px;
 }
-
-@media (min-width: 768px) {
-  .slideshow {
-    width: 100vw;
-    height: 500px;
+@media (min-width: 600px) {
+  .hero {
+    width: 90vw;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
-/*coursel section*/
-.carousel-indicators button {
-  border: none;
-  background-color: #a3a3a3;
-  margin: 10px;
-  padding: 2px 15px;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 390px) {
-  .carousel-indicators button {
-    margin: 5px;
-    padding: 2px 8px;
+@media (min-width: 768px) {
+  .slideshow {
+    width: 100%;
+    height: 600px;
   }
 }
 

@@ -1,6 +1,6 @@
 function toogleMenu() {
   //get all elements with the class of nav
-  const navElements = document.querySelectorAll(".nav");
+  const navElements = document.querySelectorAll(".header--nav");
   //loop through the elements
   navElements.forEach(function (element) {
     if (element.classList.contains("contents--expanded")) {
