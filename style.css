@@ -21,7 +21,7 @@ header {
   height: 70px;
   background-color: var(--color-primary);
 }
-
+/*navigation section*/
 .navbar-container {
   height: 100%;
 }
@@ -125,4 +125,70 @@ li.noDisplayOnDesktop {
   .navbar li:first-child {
     padding-left: 0px;
   }
+}
+/*end of navigation section*/
+/*start of hero section*/
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  background-color: var(--color-white);
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 0 0 30px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-image {
+    border-radius: 0;
+  }
+}
+
+.hero-text-container {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-text-container h1 {
+  color: var(--color-black);
+  font-size: 3rem;
+}
+
+.hero-text-container p {
+  color: var(--color-black);
+  font-size: 1.2rem;
+}
+
+.button-container {
+  padding-top: 60px;
+}
+
+button {
+  margin: 10px 30px;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.bg-blue {
+  background-color: var(--color-primary);
+}
+
+.bg-yellow {
+  background-color: var(--color-pale-yellow);
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.text-white {
+  color: var(--color-white);
 }
