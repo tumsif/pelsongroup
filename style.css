@@ -122,4 +122,7 @@ li.noDisplayOnDesktop {
   .sidebar {
     width: 100%;
   }
+  .navbar li:first-child {
+    padding-left: 5px;
+  }
 }
