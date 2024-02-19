@@ -99,27 +99,61 @@
       </nav>
     </header>
     <main>
-      <article class="hero">
-        <div>
-          <picture>
-            <source srcset="pics/excavator-2.jpg" type="image/jpeg" />
-            <source srcset="pics/excavator-2.webp" type="image/webp" />
-            <img
-              class="hero-image"
-              src="pics/excavator-2.jpg"
-              alt="an image of an excavator in site"
-            />
-          </picture>
+      <article class="position-relative bg-white pb-50">
+        <!--adding a curve background-->
+        <div class="custom-shape-divider-bottom-1708379546">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
-        <div class="hero-text-container">
-          <h1>Pelson Group</h1>
-          <p>
-            Renting and leasing of heavy construction equipments company in
-            Tanzania
-          </p>
-          <div class="button-container">
-            <button class="bg-blue text-white">Our Services</button>
-            <button class="bg-red text-white">Call us</button>
+        <div class="hero container">
+          <div class="hero-text-container">
+            <h1>Pelson Group</h1>
+            <p>
+              Renting and leasing of heavy construction equipments company in
+              Tanzania
+            </p>
+            <div class="button-container">
+              <button class="bg-blue text-white">Rent</button>
+              <button class="bg-red text-white">Call us</button>
+            </div>
+          </div>
+          <div class="p-20">
+            <picture>
+              <source
+                media="(min-width: 840px)"
+                srcset="pics/excavator-in-city.png"
+                type="image/png"
+              />
+              <source
+                media="(min-width: 840px)"
+                srcset="pics/excavator-in-city.webp"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 839px)"
+                srcset="pics/excavator-in-city-small.png"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 839px)"
+                srcset="pics/excavator-in-city-small.webp"
+                type="image/webp"
+              />
+              <img
+                class="hero-image"
+                src="pics/excavator-in-city.png"
+                alt="an image of an excavator with a building of city on background"
+              />
+            </picture>
           </div>
         </div>
       </article>
