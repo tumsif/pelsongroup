@@ -48,7 +48,7 @@
                 />
                 <img
                   class="logo"
-                  src="pics/white-logo-no-background.png"
+                  src="pics/white-logo-no-background.webp"
                   alt="logo"
                 />
               </picture>
@@ -115,17 +115,12 @@
           <picture>
             <source
               media="(min-width: 1000px)"
-              srcset="pics/excavator-large.jpg"
-              type="image/jpg"
-            />
-            <source
-              media="(min-width: 1000px)"
               srcset="pics/excavator-large.webp"
               type="image/webp"
             />
             <source
-              media="(max-width: 999px)"
-              srcset="pics/excavator-small.jpg"
+              media="(min-width: 1000px)"
+              srcset="pics/excavator-large.jpg"
               type="image/jpg"
             />
             <source
@@ -133,9 +128,14 @@
               srcset="pics/excavator-small.webp"
               type="image/webp"
             />
+            <source
+              media="(max-width: 999px)"
+              srcset="pics/excavator-small.jpg"
+              type="image/jpg"
+            />
             <img
               class="br-10"
-              src="pics/excavator-small.jpg"
+              src="pics/excavator-small.webp"
               alt="an excavator in a field"
             />
           </picture>
@@ -148,12 +148,18 @@
             <picture>
               <source
                 media="(min-width: 1000px)"
-                srcset="pics/loaders-large.jpg"
-                type="image/jpg"
+                srcset="pics/loaders-large.webp"
+                type="image/webp"
               />
               <source
                 media="(min-width: 1000px)"
-                srcset="pics/loaders-large.webp"
+                srcset="pics/loaders-large.jpg"
+                type="image/jpg"
+              />
+
+              <source
+                media="(max-width: 999px)"
+                srcset="pics/loaders-small.webp"
                 type="image/webp"
               />
               <source
@@ -161,14 +167,9 @@
                 srcset="pics/loaders-small.jpg"
                 type="image/jpg"
               />
-              <source
-                media="(max-width: 999px)"
-                srcset="pics/loaders-small.webp"
-                type="image/webp"
-              />
               <img
                 class="br-10"
-                src="pics/loaders-small.jpg"
+                src="pics/loaders-small.webp"
                 alt="an excavator in a field"
               />
             </picture>
@@ -203,6 +204,98 @@
                 <button class="bg-blue text-white">Learn more</button>
               </div>
             </div>
+          </div>
+        </div>
+      </article>
+      <article class="p-20 rentals">
+        <div class="container">
+          <h2>Our Rentals</h2>
+          <div
+            class="rental-container"
+            aria-roledescription="this is the container for the cards of rental machines"
+          >
+            <div class="rental-card" aria-roledescription="Excavators">
+              <div class="card-image">
+                <picture>
+                  <source src="pics.excavator-2.webp" type="image/webp" />
+                  <source src="pics.excavator-2.jpg" type="image/jpeg" />
+                  <img src="pics/excavator-2.jpg" alt="an image of excavator" />
+                </picture>
+              </div>
+              <div class="px-20">
+                <h3>Excavators</h3>
+                <p>
+                  Excavators are used to lifting heavy equipment or materials at
+                  the site, cut trees, demolish, etc.
+                </p>
+                <p>Price: Tsh 200,000 per day</p>
+                <p class="text-bold">Accompanied with an operator.</p>
+              </div>
+              <button class="bg-red text-white btn-1">Rent</button>
+              <button class="text-white btn-2">Learn More</button>
+            </div>
+            <div class="rental-card" aria-roledescription="Loaders">
+              <div class="card-image">
+                <picture>
+                  <source src="pics.loaders-small.webp" type="image/webp" />
+                  <source src="pics.loaders-small.jpg" type="image/jpeg" />
+                  <img
+                    src="pics/loaders-small.jpg"
+                    alt="an image of excavator"
+                  />
+                </picture>
+              </div>
+              <div class="px-20">
+                <h3>Loaders</h3>
+                <p>
+                  A loader loads material onto a conveyor system or trucks for
+                  transport.
+                </p>
+                <p>Price: Tsh 200,000 per day</p>
+                <p class="text-bold">Accompanied with an operator.</p>
+              </div>
+              <button class="bg-red text-white btn-1">Rent</button>
+              <button class="text-white btn-2">Learn More</button>
+            </div>
+            <div class="rental-card" aria-roledescription="BackHoe">
+              <div class="card-image">
+                <picture>
+                  <!-- <source src="pics.loaders-small.webp" type="image/webp" /> -->
+                  <source src="pics.backhoe-loader.jpg" type="image/jpeg" />
+                  <img
+                    src="pics/backhoe-loader.jpg"
+                    alt="an image of excavator"
+                  />
+                </picture>
+              </div>
+              <div class="px-20">
+                <h3>BackHoe</h3>
+                <p>
+                  BackHoe pushes debris and soil from one location to another,
+                  either to clear the site or to fetch the material.
+                </p>
+                <p>Price: Tsh 200,000 per day</p>
+                <p class="text-bold">Accompanied with an operator.</p>
+              </div>
+              <button class="bg-red text-white btn-1">Rent</button>
+              <button class="text-white btn-2">Learn More</button>
+            </div>
+          </div>
+          <div class="btn-3-container">
+            <button class="text-white btn-3">
+              Discover More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#008cba"
+                height="16"
+                viewBox="0 -960 960 960"
+                width="16"
+              >
+                <path
+                  d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </article>
