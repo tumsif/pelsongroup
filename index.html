@@ -99,21 +99,7 @@
       </nav>
     </header>
     <main>
-      <article class="position-relative bg-white pb-50">
-        <!--adding a curve background-->
-        <div class="custom-shape-divider-bottom-1708379546">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+      <article class="bg-white p-20">
         <div class="hero container">
           <div class="hero-text-container">
             <h1>We rent and lease heavy construction equipments in Tanzania</h1>
@@ -127,7 +113,7 @@
             </div>
           </div>
 
-          <picture class="picture p-20">
+          <!-- <picture class="picture p-20">
             <source
               media="(min-width: 840px)"
               srcset="pics/excavator-in-city.png"
@@ -152,6 +138,33 @@
               src="pics/excavator-in-city.png"
               alt="an image of an excavator with a building of city on background"
             />
+          </picture> -->
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="pics/excavator-large.jpg"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 1000px)"
+              srcset="pics/excavator-large.webp"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 999px)"
+              srcset="pics/excavator-small.jpg"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 999px)"
+              srcset="pics/excavator-small.webp"
+              type="image/webp"
+            />
+            <img
+              class="br-10"
+              src="pics/excavator-small.jpg"
+              alt="an excavator in a field"
+            />
           </picture>
         </div>
       </article>
@@ -159,10 +172,30 @@
         <div class="container">
           <h2>Who we are ?</h2>
           <div class="about-content">
-            <picture class="picture">
+            <picture>
+              <source
+                media="(min-width: 1000px)"
+                srcset="pics/loaders-large.jpg"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 1000px)"
+                srcset="pics/loaders-large.webp"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 999px)"
+                srcset="pics/loaders-small.jpg"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 999px)"
+                srcset="pics/loaders-small.webp"
+                type="image/webp"
+              />
               <img
                 class="br-10"
-                src="pics/excavator.jpg"
+                src="pics/loaders-small.jpg"
                 alt="an excavator in a field"
               />
             </picture>

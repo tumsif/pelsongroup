@@ -82,26 +82,29 @@ button {
 .pb-20 {
   padding-bottom: 0 20px 20px 20px;
 }
-.pb-50 {
-  padding-bottom: 50px;
+.py-20 {
+  padding: 20px 0;
+}
+.pr-20 {
+  padding: 0 20px 0 0;
 }
 .br-10 {
   border-radius: 10px;
 }
 
-.picture {
+picture {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 840px) {
-  .picture {
-    width: 60%;
+  picture {
+    width: 400px;
     justify-self: center;
   }
 }
-@media screen and (max-width: 560px) {
-  .picture {
+@media screen and (max-width: 440px) {
+  picture {
     width: 100%;
     justify-self: center;
   }
@@ -234,7 +237,7 @@ li.noDisplayOnDesktop {
   width: 90%;
   align-self: self-start;
   color: var(--color-black);
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .button-container {
@@ -249,46 +252,6 @@ li.noDisplayOnDesktop {
   }
   .button-container {
     padding-top: 0;
-  }
-}
-
-/** background curve styles */
-.position-relative {
-  position: relative;
-}
-.custom-shape-divider-bottom-1708379546 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1708379546 svg {
-  position: relative;
-  display: block;
-  width: calc(179% + 1.3px);
-  height: 44px;
-}
-
-.custom-shape-divider-bottom-1708379546 .shape-fill {
-  fill: #ffffff;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-bottom-1708379546 svg {
-    width: calc(152% + 1.3px);
-    height: 50px;
-  }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1708379546 svg {
-    width: calc(192% + 1.3px);
-    height: 46px;
   }
 }
 
