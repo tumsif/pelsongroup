@@ -6,7 +6,7 @@
 :root {
   --color-primary: #008cba;
   --color-white: #f3f3f3;
-  --color-grey: grey;
+  --color-grey: rgb(102, 102, 102);
   --color-pale-yellow: #fafa33;
   --color-black: rgb(49, 49, 49);
 }
@@ -144,6 +144,10 @@ ul li a {
 ul.navbar li:last-child a {
   background-color: var(--color-pale-yellow);
   color: var(--color-black);
+}
+
+.logo-link {
+  padding: 0;
 }
 
 .logo {
