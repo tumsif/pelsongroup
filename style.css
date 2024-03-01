@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --color-primary: #008cba;
+  --color-primary: #005572;
   --color-white: #f3f3f3;
   --color-grey: rgb(70, 70, 70);
   --color-pale-yellow: #fafa33;
@@ -201,8 +201,9 @@ ul.navbar li:last-child a {
   right: 0;
   top: 0;
   z-index: 999;
-  background-color: #008bba7c;
-  backdrop-filter: blur(20px);
+  background-color: var(--color-primary);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .sidebar li {
@@ -247,6 +248,20 @@ li.noDisplayOnDesktop {
   }
 }
 /*end of navigation section*/
+/*chevron up*/
+.up {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
 /*start of hero section*/
 .hero {
   display: grid;
