@@ -530,12 +530,23 @@ li.noDisplayOnDesktop {
   .testimonial-text {
     margin: 20px;
   }
+  .testimonial {
+    width: 80%;
+  }
+  .slider-btn {
+    top: 90%;
+  }
 }
 @media screen and (max-width: 530px) {
   .testimonial-text {
-    margin: 5px 5px 10px 5px;
+    margin: 5px 5px 20px 5px;
   }
   .testimonial-author {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 336px) {
+  .testimonial {
+    width: 85%;
   }
 }
