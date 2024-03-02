@@ -133,6 +133,11 @@ picture {
   picture {
     width: 100%;
     justify-self: center;
+    height: fit-content;
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 /************************/
@@ -350,10 +355,12 @@ li.noDisplayOnDesktop {
   .rental-card {
     margin-bottom: 24px;
     max-width: 310px;
-    background-color: #edf2f7;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (max-width: 380px) {
+  .rental-card {
+    margin-bottom: 24px;
+    max-width: 280px;
   }
 }
 
@@ -377,6 +384,7 @@ li.noDisplayOnDesktop {
 .card-image {
   height: 260px;
   width: 350px;
+  overflow: hidden;
 }
 
 .btn-3-container {
