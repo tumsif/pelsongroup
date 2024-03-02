@@ -41,7 +41,7 @@ const slider = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
         "beforeend",
-        `<button class="dots-dot" data-slide="${i}"></button>`
+        `<button aria-label="Links" class="dots-dot" data-slide="${i}"></button>`
       );
     });
   };

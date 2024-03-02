@@ -29,7 +29,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="min.style.css" />
   </head>
   <body>
     <header>
@@ -99,6 +99,7 @@
       </nav>
     </header>
     <main>
+      <!--hero section-->
       <article class="bg-white p-20">
         <div class="hero container">
           <div class="hero-text-container">
@@ -141,6 +142,7 @@
           </picture>
         </div>
       </article>
+      <!---->
       <article class="p-20">
         <div class="container">
           <h2>Who we are ?</h2>
@@ -226,8 +228,8 @@
             <div class="rental-card" aria-roledescription="Excavators">
               <div class="card-image">
                 <picture>
-                  <source src="pics/excavator-2.webp" type="image/webp" />
-                  <source src="pics/excavator-2.jpg" type="image/jpeg" />
+                  <source srcset="pics/excavator-2.webp" type="image/webp" />
+                  <source srcset="pics/excavator-2.jpg" type="image/jpeg" />
                   <img src="pics/excavator-2.jpg" alt="an image of excavator" />
                 </picture>
               </div>
@@ -247,15 +249,21 @@
               <div class="card-image">
                 <picture>
                   <source
-                    src="https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGVyfGVufDB8fDB8fHww"
+                    srcset="
+                      https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGVyfGVufDB8fDB8fHww
+                    "
                     type="image/webp"
                   />
                   <source
-                    src="https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGVyfGVufDB8fDB8fHww"
+                    srcset="
+                      https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGVyfGVufDB8fDB8fHww
+                    "
                     type="image/jpeg"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGVyfGVufDB8fDB8fHww"
+                    srcset="
+                      https://images.unsplash.com/photo-1629807473015-41699c4471b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGVyfGVufDB8fDB8fHww
+                    "
                     alt="an image of excavator"
                   />
                 </picture>
@@ -276,11 +284,15 @@
               <div class="card-image">
                 <picture>
                   <source
-                    src="https://images.unsplash.com/photo-1612878100556-032bbf1b3bab?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tob2UlMjBsb2FkZXJ8ZW58MHwwfDB8fHww"
+                    srcset="
+                      https://images.unsplash.com/photo-1612878100556-032bbf1b3bab?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tob2UlMjBsb2FkZXJ8ZW58MHwwfDB8fHww
+                    "
                     type="image/webp"
                   />
                   <source
-                    src="https://images.unsplash.com/photo-1612878100556-032bbf1b3bab?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tob2UlMjBsb2FkZXJ8ZW58MHwwfDB8fHww"
+                    srcset="
+                      https://images.unsplash.com/photo-1612878100556-032bbf1b3bab?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tob2UlMjBsb2FkZXJ8ZW58MHwwfDB8fHww
+                    "
                     type="image/jpeg"
                   />
                   <img
@@ -347,7 +359,7 @@
                     alt=""
                     class="testimonial-photo"
                   />
-                  <h6 class="testimonial-name">Aarav Lynn</h6>
+                  <h4 class="testimonial-name">Aarav Lynn</h4>
                   <p class="testimonial-location">San Francisco, USA</p>
                 </address>
               </div>
@@ -355,9 +367,9 @@
 
             <div class="slide slide--2">
               <div class="testimonial">
-                <h4 class="testimonial-header">
+                <h3 class="testimonial-header">
                   The last step to becoming a complete minimalist
-                </h4>
+                </h3>
                 <blockquote class="testimonial-text">
                   Quisquam itaque deserunt ullam, quia ea repellendus provident,
                   ducimus neque ipsam modi voluptatibus doloremque, corrupti
@@ -371,7 +383,7 @@
                     alt=""
                     class="testimonial-photo"
                   />
-                  <h6 class="testimonial-name">Miyah Miles</h6>
+                  <h4 class="testimonial-name">Miyah Miles</h4>
                   <p class="testimonial-location">London, UK</p>
                 </address>
               </div>
@@ -379,9 +391,9 @@
 
             <div class="slide slide--3">
               <div class="testimonial">
-                <h4 class="testimonial-header">
+                <h3 class="testimonial-header">
                   Finally free from old-school banks
-                </h4>
+                </h3>
                 <blockquote class="testimonial-text">
                   Debitis, nihil sit minus suscipit magni aperiam vel tenetur
                   incidunt commodi architecto numquam omnis nulla autem,
@@ -396,18 +408,26 @@
                     alt=""
                     class="testimonial-photo"
                   />
-                  <h5 class="testimonial-name">Francisco Gomes</h5>
+                  <h4 class="testimonial-name">Francisco Gomes</h4>
                   <p class="testimonial-location">Lisbon, Portugal</p>
                 </address>
               </div>
             </div>
-            <button class="slider-btn slider-btn-left">&larr;</button>
-            <button class="slider-btn slider-btn-right">&rarr;</button>
+            <button class="slider-btn slider-btn-left" aria-label="Previous">
+              &larr;
+            </button>
+            <button class="slider-btn slider-btn-right" aria-label="Next">
+              &rarr;
+            </button>
             <div class="dots"></div>
           </div>
         </div>
       </article>
-      <!--scroll to top-->
+      <article>
+        <h2>Get started.</h2>
+        <div class="container"></div>
+      </article>
+      <!--scroll to top icon-->
       <div class="up" id="up-arrow" onclick="scrollToTop()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -425,6 +445,6 @@
       </div>
       <!---->
     </main>
-    <script src="script.js"></script>
+    <script src="min.script.js"></script>
   </body>
 </html>

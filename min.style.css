@@ -1,6 +1,34 @@
+.bg-blue,
+header {
+  background-color: var(--color-primary);
+}
+body,
+ul {
+  margin: 0;
+}
+.navbar-container,
+img,
+picture,
+ul {
+  height: 100%;
+}
+.p-10,
+ul li a {
+  padding: 10px;
+}
+.rental-card h3,
+.text-bold {
+  font-weight: 700;
+}
+.dots-dot,
+.slider-btn,
+.up,
+button {
+  cursor: pointer;
+}
 *,
-*::before,
-*::after {
+::after,
+::before {
   box-sizing: border-box;
 }
 :root {
@@ -11,49 +39,44 @@
   --color-pale-yellow: #fafa33;
   --color-black: rgb(49, 49, 49);
 }
-
 body {
-  margin: 0;
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 header {
   height: 70px;
-  background-color: var(--color-primary);
 }
-
 h1 {
   font-size: 2.2rem;
 }
-
 h2 {
   font-size: 2rem;
   text-align: center;
 }
-
 h3 {
   font-size: 1.5rem;
 }
+button,
 p {
   font-size: 1rem;
+}
+p {
   color: var(--color-black);
 }
-
-img {
+img,
+picture {
   width: 100%;
-  height: 100%;
 }
-
 button {
   margin: 10px 30px;
   border: 0;
   padding: 15px 20px;
   border-radius: 100px;
-  font-size: 1rem;
-  cursor: pointer;
 }
-
+.br-10,
+ul li a {
+  border-radius: 10px;
+}
 @media screen and (max-width: 421px) {
   button {
     margin: 8px 20px;
@@ -64,21 +87,14 @@ button {
     font-size: 1.5 rem;
   }
 }
-
-/*widely used classes*/
 .container {
   margin: 0 auto;
   max-width: 1140px;
 }
-
-.bg-blue {
-  background-color: var(--color-primary);
-}
-
-.bg-yellow {
+.bg-yellow,
+.sidebar li:hover {
   background-color: var(--color-pale-yellow);
 }
-
 .bg-red {
   background-color: red;
 }
@@ -88,14 +104,18 @@ button {
 .bg-grey {
   background-color: var(--color-grey);
 }
-.br-10 {
-  border-radius: 10px;
+.sidebar,
+.up {
+  background-color: var(--color-primary);
+  position: fixed;
 }
-.color-white {
+.color-white,
+.text-white {
   color: var(--color-white);
 }
-.p-10 {
-  padding: 10px;
+.hero-text-container,
+.sidebar li:hover a {
+  color: var(--color-black);
 }
 .p-20 {
   padding: 20px;
@@ -112,22 +132,17 @@ button {
 .pr-20 {
   padding: 0 20px 0 0;
 }
-.text-bold {
-  font-weight: bold;
+.logo-link,
+ul {
+  padding: 0;
 }
-.text-white {
-  color: var(--color-white);
-}
-
-picture {
-  width: 100%;
-  height: 100%;
-}
-
 @media screen and (max-width: 840px) {
   picture {
     width: 400px;
     justify-self: center;
+  }
+  .noDisplayOnMobile {
+    display: none;
   }
 }
 @media screen and (max-width: 440px) {
@@ -141,18 +156,6 @@ picture {
     height: auto;
   }
 }
-/************************/
-/*navigation section*/
-.navbar-container {
-  height: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 ul li {
   list-style-type: none;
   padding-right: 60px;
@@ -160,115 +163,79 @@ ul li {
 ul li:last-child {
   padding-right: 40px;
 }
-
 ul li a {
   text-decoration: none;
   color: var(--color-pale-yellow);
-  padding: 10px;
-  border-radius: 10px;
 }
-
-.nav-item a:hover {
-  background-color: var(--color-pale-yellow);
-  color: var(--color-black);
-}
-
+.nav-item a:hover,
 ul.navbar li:last-child a {
   background-color: var(--color-pale-yellow);
   color: var(--color-black);
 }
-
-.logo-link {
-  padding: 0;
-}
-
 .logo {
   height: 60px;
 }
-
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
-
 .navbar li:first-child {
   margin-right: auto;
   padding-left: 20px;
 }
-
 .sidebar {
   display: none;
   flex-direction: column;
-  position: fixed;
   height: 100vh;
   width: 250px;
   right: 0;
   top: 0;
   z-index: 999;
-  background-color: var(--color-primary);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-
 .sidebar li {
   padding: 1em 0;
 }
-.sidebar li:hover {
-  background-color: var(--color-pale-yellow);
-}
-.sidebar li:hover a {
-  color: var(--color-black);
-}
-
 .sidebar li:first-child {
   align-self: flex-end;
-  background: none;
+  background: 0 0;
 }
-
 li.noDisplayOnDesktop {
   padding: 5px;
 }
 .closebutton {
   padding-right: 5px;
 }
-@media screen and (max-width: 840px) {
-  .noDisplayOnMobile {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 841px) {
   .noDisplayOnDesktop {
     display: none;
   }
 }
-
 @media screen and (max-width: 400px) {
   .sidebar {
     width: 100%;
   }
   .navbar li:first-child {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
-/*end of navigation section*/
-/*chevron up*/
 .up {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
   bottom: 30px;
   right: 30px;
-  cursor: pointer;
 }
-/*start of hero section*/
+.rental-card,
+.rentals {
+  background-color: #edf2f7;
+}
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -276,26 +243,31 @@ li.noDisplayOnDesktop {
   justify-content: center;
   align-items: center;
 }
-
+.hero-text-container {
+  width: 90%;
+  align-self: self-start;
+  padding: 0 20px;
+}
+.btn-2,
+.btn-3,
+.slider-btn,
+.testimonial::before {
+  color: var(--color-primary);
+}
+.button-container {
+  padding-top: 40px;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: 480px;
+  gap: 30px;
+}
 @media screen and (max-width: 840px) {
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: 380px 400px;
   }
-}
-
-.hero-text-container {
-  width: 90%;
-  align-self: self-start;
-  color: var(--color-black);
-  padding: 0 20px;
-}
-
-.button-container {
-  padding-top: 40px;
-}
-
-@media screen and (max-width: 840px) {
   .hero-text-container {
     width: 100%;
     text-align: center;
@@ -304,31 +276,15 @@ li.noDisplayOnDesktop {
   .button-container {
     padding-top: 0;
   }
-}
-
-/*About us page*/
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  grid-template-rows: 480px;
-  gap: 30px;
-}
-
-@media screen and (max-width: 840px) {
   .about-content {
     grid-template-columns: 1fr;
     grid-template-rows: 380px;
   }
 }
-/*our rentals section page*/
-.rentals {
-  background-color: #edf2f7;
-}
 .rental-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
 @media screen and (max-width: 1136px) {
   .rental-container {
     grid-template-columns: repeat(2, 1fr);
@@ -342,21 +298,12 @@ li.noDisplayOnDesktop {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 .rental-card {
   margin-bottom: 20px;
   max-width: 350px;
-  background-color: #edf2f7;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 380px) {
-  .rental-card {
-    margin-bottom: 24px;
-    max-width: 310px;
-  }
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 380px) {
   .rental-card {
@@ -364,10 +311,8 @@ li.noDisplayOnDesktop {
     max-width: 280px;
   }
 }
-
 .rental-card h3 {
   font-size: 1.2rem;
-  font-weight: bold;
   color: var(--color-grey);
   text-transform: uppercase;
 }
@@ -375,31 +320,30 @@ li.noDisplayOnDesktop {
 .btn-2 {
   padding: 10px 15px;
   border-radius: 5px;
-  margin: 0 30px 15px 30px;
+  margin: 0 30px 15px;
 }
 .btn-2,
 .btn-3 {
-  background: none;
-  color: var(--color-primary);
+  background: 0 0;
 }
 .card-image {
   height: 260px;
   width: 350px;
   overflow: hidden;
 }
-
 .btn-3-container {
   display: flex;
   justify-content: center;
 }
-
+.dots,
+.slide {
+  display: flex;
+  align-items: center;
+}
 .btn-3 {
   display: flex;
   gap: 5px;
 }
-
-/*sliders section*/
-/* SLIDER */
 .slider {
   width: 100%;
   height: 500px;
@@ -407,61 +351,47 @@ li.noDisplayOnDesktop {
   position: relative;
   overflow: hidden;
 }
-
-.slide {
+.dots,
+.slide,
+.slider-btn {
   position: absolute;
+}
+.slide {
   top: 0;
   width: 100%;
   min-height: 450px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  /* This creates the animation! */
   transition: transform 1s;
 }
-
 .slide > img {
-  /* Only for images that have different size than slide */
   width: 50%;
   height: 50%;
   object-fit: cover;
 }
-
 .slider-btn {
-  position: absolute;
   top: 50%;
   z-index: 10;
-
   border: none;
   background: rgba(255, 255, 255, 0.7);
-  color: var(--color-primary);
   border-radius: 50%;
   height: 3rem;
   width: 3rem;
   font-size: 1.8rem;
-  cursor: pointer;
 }
-
 .slider-btn-left {
   left: 6%;
   transform: translate(-50%, -50%);
 }
-
 .slider-btn-right {
   right: 6%;
   transform: translate(50%, -50%);
 }
-
 .dots {
-  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
-
 .dots-dot {
   background-color: #b9b9b9;
   border: none;
@@ -471,70 +401,56 @@ li.noDisplayOnDesktop {
   opacity: 0.7;
   width: 16px;
   margin-right: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
-
 .dots-dot-active {
   background-color: #888;
   opacity: 1;
 }
-
-/* TESTIMONIALS */
 .testimonial {
   width: 60%;
   position: relative;
 }
-
 .testimonial::before {
   content: "\201C";
   position: absolute;
   left: -20px;
   font-size: 32px;
   font-family: inherit;
-  color: var(--color-primary);
   z-index: -1;
 }
-
 .testimonial-header {
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 15px;
 }
-
 .testimonial-text {
   font-size: 1rem;
   margin-bottom: 3rem;
   color: #666;
 }
-
 .testimonial-author {
   margin-left: 30px;
   font-style: normal;
-
   display: grid;
   grid-template-columns: 65px 1fr;
   column-gap: 20px;
   align-items: center;
 }
-
 .testimonial-photo {
   grid-row: 1 / span 2;
   width: 65px;
   border-radius: 50%;
 }
-
 .testimonial-name {
   font-size: 1rem;
   font-weight: 500;
   align-self: end;
   margin: 0;
 }
-
 .testimonial-location {
   font-size: 0.8rem;
 }
-
 @media screen and (max-width: 598px) {
   .testimonial-text {
     margin: 20px;
@@ -548,7 +464,7 @@ li.noDisplayOnDesktop {
 }
 @media screen and (max-width: 530px) {
   .testimonial-text {
-    margin: 5px 5px 20px 5px;
+    margin: 5px 5px 20px;
   }
   .testimonial-author {
     margin-bottom: 20px;
