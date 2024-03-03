@@ -12,6 +12,10 @@ picture,
 ul {
   height: 100%;
 }
+.link,
+ul li a {
+  text-decoration: none;
+}
 .p-10,
 ul li a {
   padding: 10px;
@@ -113,10 +117,6 @@ ul li a {
 .text-white {
   color: var(--color-white);
 }
-.hero-text-container,
-.sidebar li:hover a {
-  color: var(--color-black);
-}
 .p-20 {
   padding: 20px;
 }
@@ -135,6 +135,13 @@ ul li a {
 .logo-link,
 ul {
   padding: 0;
+}
+.link {
+  color: var(--color-primary);
+}
+.hero-text-container,
+.sidebar li:hover a {
+  color: var(--color-black);
 }
 @media screen and (max-width: 840px) {
   picture {
@@ -164,7 +171,6 @@ ul li:last-child {
   padding-right: 40px;
 }
 ul li a {
-  text-decoration: none;
   color: var(--color-pale-yellow);
 }
 .nav-item a:hover,
