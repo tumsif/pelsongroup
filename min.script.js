@@ -10,7 +10,7 @@ function sendMail() {
     usr_name: document.getElementById("user_name").value,
     usr_email: document.getElementById("user_email").value,
     usr_phone: document.getElementById("user_phone").value,
-    usr_message: document.getElementById("message").value,
+    message: document.getElementById("message").value,
   };
   if ("" !== e.usr_email && "" !== e.usr_name && "" !== e.usr_phone)
     emailjs.send("service_pelson", "template_y6b4esk", e).then(
