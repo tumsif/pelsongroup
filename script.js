@@ -8,6 +8,36 @@ function closeSideBar() {
   sidebar.style.display = "none";
 }
 
+/**This is the functionality for email submission */
+function sendMail() {
+  var params = {
+    usr_name: document.getElementById("user_name").value,
+    usr_email: document.getElementById("user_email").value,
+    usr_phone: document.getElementById("user_phone").value,
+  };
+
+  if (
+    params.usr_email !== "" &&
+    params.usr_name !== "" &&
+    params.usr_phone !== ""
+  ) {
+    emailjs.send("service_pelson", "template_y6b4esk", params).then(
+      (response) => {
+        document.getElementById("user_name").value = "";
+        document.getElementById("user_email").value = "";
+        document.getElementById("user_phone").value = "";
+        console.log("SUCCESS!", response.status, response.text);
+        alert("We will contact you shortly thank you!");
+      },
+      (error) => {
+        console.log("FAILED", error);
+      }
+    );
+  } else {
+    throw Error("From not complete");
+  }
+}
+
 /**Visibilty for up arrow upon scrolling */
 window.onscroll = function () {
   showOnScroll();

@@ -1,3 +1,8 @@
+img,
+input,
+picture {
+  width: 100%;
+}
 .bg-blue,
 header {
   background-color: var(--color-primary);
@@ -17,6 +22,7 @@ ul li a {
   text-decoration: none;
 }
 .p-10,
+input,
 ul li a {
   padding: 10px;
 }
@@ -36,12 +42,13 @@ button {
   box-sizing: border-box;
 }
 :root {
-  --color-primary: #005572;
-  --color-light-grey: #e4e4e4;
-  --color-white: #ffffff;
-  --color-grey: rgb(70, 70, 70);
-  --color-pale-yellow: #fafa33;
   --color-black: rgb(49, 49, 49);
+  --color-grey: rgb(70, 70, 70);
+  --color-light-grey: #e0e0e0;
+  --color-light-grey: #e4e4e4;
+  --color-pale-yellow: #fafa33;
+  --color-primary: #005572;
+  --color-white: #ffffff;
 }
 body {
   min-height: 100vh;
@@ -61,21 +68,24 @@ h3 {
   font-size: 1.5rem;
 }
 button,
+input,
 p {
   font-size: 1rem;
 }
 p {
   color: var(--color-black);
 }
-img,
-picture {
-  width: 100%;
-}
 button {
   margin: 10px 30px;
   border: 0;
   padding: 15px 20px;
   border-radius: 100px;
+}
+input {
+  border: 0;
+  border-bottom: 2px solid grey;
+  margin: 20px 0;
+  outline: 0;
 }
 .br-10,
 ul li a {
@@ -102,6 +112,7 @@ ul li a {
 .bg-red {
   background-color: red;
 }
+.bg-light-grey,
 .bg-white {
   background-color: var(--color-light-grey);
 }
@@ -114,6 +125,7 @@ ul li a {
   position: fixed;
 }
 .color-white,
+.contact-text,
 .text-white {
   color: var(--color-white);
 }
@@ -202,6 +214,10 @@ ul.navbar li:last-child a {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+.slide,
+.up {
+  align-items: center;
+}
 .sidebar li {
   padding: 1em 0;
 }
@@ -233,10 +249,10 @@ li.noDisplayOnDesktop {
   height: 40px;
   border-radius: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   bottom: 30px;
   right: 30px;
+  z-index: 90;
 }
 .rental-card,
 .rentals {
@@ -291,6 +307,11 @@ li.noDisplayOnDesktop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.btn-3,
+.dots,
+.slide {
+  display: flex;
+}
 @media screen and (max-width: 1136px) {
   .rental-container {
     grid-template-columns: repeat(2, 1fr);
@@ -341,13 +362,7 @@ li.noDisplayOnDesktop {
   display: flex;
   justify-content: center;
 }
-.dots,
-.slide {
-  display: flex;
-  align-items: center;
-}
 .btn-3 {
-  display: flex;
   gap: 5px;
 }
 .slider {
@@ -396,6 +411,7 @@ li.noDisplayOnDesktop {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  align-items: center;
   justify-content: center;
 }
 .dots-dot {
@@ -480,5 +496,71 @@ li.noDisplayOnDesktop {
 @media screen and (max-width: 336px) {
   .testimonial {
     width: 85%;
+  }
+}
+.contact-container {
+  display: flex;
+  background-color: var(--color-white);
+}
+.contact-details,
+.send-btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.send-btn {
+  width: 100%;
+  margin: 20px 0 0;
+  border-radius: 0;
+}
+.contact-form {
+  padding: 20px 90px 60px 100px;
+}
+.contact-details {
+  margin: 60px 0;
+  padding: 0 40px;
+}
+ul.contact-information {
+  height: auto;
+}
+ul.contact-information li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+ul.contact-information li span {
+  padding: 0 5px;
+}
+@media screen and (max-width: 872px) {
+  .contact-form {
+    padding: 20px 70px 60px 80px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .contact-form {
+    padding: 20px 50px 60px 60px;
+  }
+}
+@media screen and (max-width: 781px) {
+  .contact-form {
+    padding: 20px 30px 60px 40px;
+  }
+}
+@media screen and (max-width: 747px) {
+  .contact-details {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 688px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-details {
+    margin: 60px 0 0;
+  }
+}
+@media screen and (max-width: 396px) {
+  .contact-form {
+    padding: 20px 15px 25px;
+    text-align: center;
   }
 }
