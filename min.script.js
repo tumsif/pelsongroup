@@ -10,6 +10,7 @@ function sendMail() {
     usr_name: document.getElementById("user_name").value,
     usr_email: document.getElementById("user_email").value,
     usr_phone: document.getElementById("user_phone").value,
+    usr_message: document.getElementById("message").value,
   };
   if ("" !== e.usr_email && "" !== e.usr_name && "" !== e.usr_phone)
     emailjs.send("service_pelson", "template_y6b4esk", e).then(
@@ -17,6 +18,7 @@ function sendMail() {
         (document.getElementById("user_name").value = ""),
           (document.getElementById("user_email").value = ""),
           (document.getElementById("user_phone").value = ""),
+          (document.getElementById("message").value = ""),
           console.log("SUCCESS!", e.status, e.text),
           alert("We will contact you shortly thank you!");
       },
@@ -40,8 +42,8 @@ window.onscroll = function () {
 const slider = function () {
   let e = document.querySelectorAll(".slide"),
     t = document.querySelector(".slider-btn-left"),
-    o = document.querySelector(".slider-btn-right"),
-    l = document.querySelector(".dots"),
+    l = document.querySelector(".slider-btn-right"),
+    o = document.querySelector(".dots"),
     n = 0,
     s = e.length,
     r = function (e) {
@@ -54,29 +56,29 @@ const slider = function () {
     },
     a = function (t) {
       e.forEach(
-        (e, o) => (e.style.transform = `translateX(${100 * (o - t)}%)`)
+        (e, l) => (e.style.transform = `translateX(${100 * (l - t)}%)`)
       );
     },
-    i = function () {
+    d = function () {
       n === s - 1 ? (n = 0) : n++, a(n), r(n);
     },
-    d = function () {
+    i = function () {
       0 === n ? (n = s - 1) : n--, a(n), r(n);
     };
   a(0),
     e.forEach(function (e, t) {
-      l.insertAdjacentHTML(
+      o.insertAdjacentHTML(
         "beforeend",
         `<button aria-label="Links" class="dots-dot" data-slide="${t}"></button>`
       );
     }),
     r(0),
-    o.addEventListener("click", i),
-    t.addEventListener("click", d),
+    l.addEventListener("click", d),
+    t.addEventListener("click", i),
     document.addEventListener("keydown", function (e) {
-      "ArrowLeft" === e.key && d(), "ArrowRight" === e.key && i();
+      "ArrowLeft" === e.key && i(), "ArrowRight" === e.key && d();
     }),
-    l.addEventListener("click", function (e) {
+    o.addEventListener("click", function (e) {
       if (e.target.classList.contains("dots-dot")) {
         let { slide: t } = e.target.dataset;
         a(t), r(t);

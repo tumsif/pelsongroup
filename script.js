@@ -14,6 +14,7 @@ function sendMail() {
     usr_name: document.getElementById("user_name").value,
     usr_email: document.getElementById("user_email").value,
     usr_phone: document.getElementById("user_phone").value,
+    usr_message: document.getElementById("message").value,
   };
 
   if (
@@ -26,6 +27,7 @@ function sendMail() {
         document.getElementById("user_name").value = "";
         document.getElementById("user_email").value = "";
         document.getElementById("user_phone").value = "";
+        document.getElementById("message").value = "";
         console.log("SUCCESS!", response.status, response.text);
         alert("We will contact you shortly thank you!");
       },
