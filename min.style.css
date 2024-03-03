@@ -439,6 +439,7 @@ li.noDisplayOnDesktop {
 }
 .testimonial-photo {
   grid-row: 1 / span 2;
+  height: 65px;
   width: 65px;
   border-radius: 50%;
 }
